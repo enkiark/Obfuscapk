@@ -1,0 +1,33 @@
+.class public final Lj/a/h0/i/a$g;
+.super Ljava/lang/Object;
+.source "sourcefile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lj/a/h0/i/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "g"
+.end annotation
+
+
+# static fields
+.field public static final a:Lj/a/h0/b/g;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 65
+    new-instance v0, Lj/a/h0/f/e/l;
+
+    invoke-direct {v0}, Lj/a/h0/f/e/l;-><init>()V
+
+    sput-object v0, Lj/a/h0/i/a$g;->a:Lj/a/h0/b/g;
+
+    return-void
+.end method

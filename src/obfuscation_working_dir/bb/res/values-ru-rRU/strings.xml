@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_calendar_permission">Календарь</string>
+    <string name="permission_camera_permission">Камера</string>
+    <string name="permission_cancel">Отменить</string>
+    <string name="permission_contacts_permission">Контакты</string>
+    <string name="permission_location_permission">Location</string>
+    <string name="permission_microphone_permission">Микрофон</string>
+    <string name="permission_phone_permission">Телефон</string>
+    <string name="permission_sensor_permission">Датчик</string>
+    <string name="permission_set_permission">Настройки разрешений</string>
+    <string name="permission_sms_permission">SMS</string>
+    <string name="permission_storage_permission">Место хранения</string>
+    <string name="permission_to_set">установить</string>
+</resources>

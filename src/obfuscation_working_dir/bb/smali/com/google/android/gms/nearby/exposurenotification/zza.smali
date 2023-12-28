@@ -1,0 +1,27 @@
+.class public final Lcom/google/android/gms/nearby/exposurenotification/zza;
+.super Ljava/lang/Object;
+.source "sourcefile"
+
+
+# direct methods
+.method public static zza()[I
+    .locals 1
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_0
+
+    return-object v0
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x1
+        0x2
+        0x3
+        0x4
+    .end array-data
+.end method

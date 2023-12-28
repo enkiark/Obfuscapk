@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d 個新通知</item>
+        <item quantity="one">%d 個新通知</item>
+    </plurals>
+    <plurals name="permission_denied_message">
+        <item quantity="other">沒有許可權，請授予&lt;b>%s&lt;/b>許可權之後再次嘗試。</item>
+    </plurals>
+    <plurals name="permission_set_in_settings_message">
+        <item quantity="other">打開設定的程式資訊頁面，輕觸\"許可權\"，將&lt;b>%s&lt;/b>設定為打開，並再次嘗試。</item>
+    </plurals>
+</resources>

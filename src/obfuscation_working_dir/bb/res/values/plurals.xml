@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="permission_denied_message">
+        <item quantity="other">Permissions denied. Please try again after grant &lt;b>%s&lt;/b> permissions.</item>
+        <item quantity="one">Permission denied. Please try again after grant the &lt;b>%s&lt;/b> permission.</item>
+    </plurals>
+    <plurals name="permission_set_in_settings_message">
+        <item quantity="other">"Permissions required.
+
+Grant permissions to this application and try again:
+
+ Open app info page in settings, tap 'Permissions', enable &lt;b>%s&lt;/b> permissions."</item>
+        <item quantity="one">"Permission required.
+
+Grant permission to this application and try again:
+
+ Open app info page in settings, tap 'Permissions', enable &lt;b>%s&lt;/b> permission."</item>
+    </plurals>
+</resources>
